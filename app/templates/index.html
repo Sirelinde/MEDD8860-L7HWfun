@@ -58,16 +58,20 @@
 
 <!--floating objects-->
 <!--units are in meters: x y z, +z towards line of vision, +x right horizontal, +y up vertical-->
-<!--centre meter square at 0 2 0 cannot be occupied by objects cos the "person's eye level" is there-->
-<!--duration counted in ms, small no. faster, rotation in degrees, +ve clockwise viewed from +ve axis direction-->
+<!--centre meter square at 0 2 0 cannot be visibly occupied by objects cos the "person's eye level" is there-->
+<!--duration counted in ms, small no. is faster, rotation in degrees, +ve clockwise viewed in +ve axis direction-->
 
 <a-box position="0 2 0" color="black" height="1" width="1" depth="1">
+
+<!--invisible box at person's position, to set red box orbiting z about point at 0 2 -15-->
 
 <a-animation attribute="rotation" to="0 0 360" repeat="indefinite" easing="linear" dur="8000">
 
 </a-animation>
 
 <a-box position="0 5 -15" color="red" height="2" width="1" depth="1">
+
+<!--red box orbit radius=5-->
 
     <a-animation attribute="rotation" to="0 0 360" repeat="indefinite" easing="linear" dur="8000">
 
@@ -76,12 +80,16 @@
 
 <a-box position="0 6.5 0" color="yellow" height="1" width="2" depth="1">
 
+<!--yellow box orbit radius=6.5-->
+
     <a-animation attribute="rotation" to="360 0 0" repeat="indefinite" easing="linear" dur="6000">
 
     </a-animation>
 
 
 <a-box position="0 0 3.5" color="green" height="2" width="1" depth="1">
+
+<!--green box orbit radius=3.5-->
 
     <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" easing="linear" dur="4000">
 
@@ -90,6 +98,8 @@
 
 <a-box position="0 0 2" color="blue" height="1" width="2" depth="1">
 
+<!--blue box orbit radius=2-->
+    
     <a-animation attribute="rotation" to="360 0 0" repeat="indefinite" easing="linear" dur="2000">
 
     </a-animation>
